@@ -1,8 +1,4 @@
 import React from 'react';
-import '../app/App.css';
-import HeroText from '../herotext/HeroText';
-import HeroCalculator from '../herocalculator/HeroCalculator';
-
 
 function Hero(props) {
   return (

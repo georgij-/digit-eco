@@ -8,27 +8,21 @@ function App() {
   return (
     
     <div className="app-wrapper">
-
-      <div className="container">
-      <Hero
-      left={
-        <HeroText />
-      }
-      right={
-        <HeroCalculator />
-      } />
-      </div>
-
-      <div className="container">
-      <Hero
-      left={
-        <HeroText />
-      }
-      right={
-        <HeroCalculator />
-      } />
-      </div>
       
+      <div id="hero" className="container">
+      <Hero
+      left={
+        <HeroText />
+      }
+      right={
+        <HeroCalculator />
+      } />
+      </div>
+      <div id="steps" className="container">
+        <h1>TEst</h1>
+      </div>
+
+
     </div>
   );
 }

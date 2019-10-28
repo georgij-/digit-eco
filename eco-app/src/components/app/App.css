@@ -7,14 +7,16 @@
 }
 
 .container {
-  background-color: #66CD00;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+#hero {
+  background-color: #66CD00;
+  color: #fff;
 }
 
 .App-link {
@@ -27,20 +29,40 @@ html, body, #root {
 }
 
 .SplitPane {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.SplitPane h1 {
+  font-size: calc(18px + 2vmin);
+
 }
 
 .SplitPane-left {
-  float: left;
-  width: 40%;
-  height: 100%;
+  display: block;
+  flex-basis: 40%;
 }
 
 .SplitPane-right {
-  float: left;
-  width: 60%;
-  height: 100%;
+  display: block;
+  flex-basis: 60%;
+  position: relative;
+}
+.hero-text {
+  margin-top: 6rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+
+}
+.calculator {
+  background: #fff;
+  color: #000;
+  height: 500px;
+  border-radius: 15px;
+  margin: 6rem;
+  padding: 2rem;
 }
 
 .Contacts {
