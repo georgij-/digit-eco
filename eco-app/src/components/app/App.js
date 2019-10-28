@@ -1,28 +1,34 @@
 import React from 'react';
-import './App.css';
-import Container from '../container/Container';
+import '../app/App.css';
+import Hero from '../hero/Hero';
+import HeroText from '../herotext/HeroText';
+import HeroCalculator from '../herocalculator/HeroCalculator';
 
 function App() {
   return (
     
-    <div className="App">
-      <Container id="hero">
+    <div className="app-wrapper">
+
+      <div className="container">
+      <Hero
+      left={
+        <HeroText />
+      }
+      right={
+        <HeroCalculator />
+      } />
+      </div>
+
+      <div className="container">
+      <Hero
+      left={
+        <HeroText />
+      }
+      right={
+        <HeroCalculator />
+      } />
+      </div>
       
-      </Container>
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          neshtos
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }
