@@ -7,7 +7,7 @@
 }
 
 .container {
-  background-color: #282c34;
+  background-color: #66CD00;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,13 +33,13 @@ html, body, #root {
 
 .SplitPane-left {
   float: left;
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 
 .SplitPane-right {
   float: left;
-  width: 70%;
+  width: 60%;
   height: 100%;
 }
 
