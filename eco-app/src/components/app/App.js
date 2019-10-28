@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Container from '../container/Container';
 
 function App() {
   return (
+    
     <div className="App">
+      <Container id="hero">
+      
+      </Container>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
