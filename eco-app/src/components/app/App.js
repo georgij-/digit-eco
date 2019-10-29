@@ -17,7 +17,7 @@ function App() {
       
       <div id="hero" className="container">
       <img className="main-logo" src="https://img.icons8.com/color/120/000000/recycle-sign.png" />
-
+      <h4 className="main-logo-text">Recycle 'N' GO</h4>
       <Hero
       left={
         <HeroText />
@@ -34,10 +34,10 @@ function App() {
       </div>
 
       <div id="cards" className="container">
-        <Card heading={'Хартија'} bodyText={'Test Text'} />
-        <Card heading={'Стакло'} bodyText={'Test Text1'} />
-        <Card heading={'Пластика'} bodyText={'Test Text2'} />
-        <Card heading={'Метал'} bodyText={'Test Text3'} />
+      <Zoom><Card heading={'Хартија'} bodyText={'Suspendisse id laoreet dolor. Donec congue, quam id ultrices pulvinar, dolor neque placerat nulla, eu vehicula nunc neque vel eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec placerat diam at tempor varius. Proin dapibus erat in nulla varius, eu finibus justo interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ex ut nisi ullamcorper, non ornare nunc porta. Nulla sodales elementum fringilla. Curabitur dui elit, gravida ac iaculis eget, ullamcorper eget ipsum. Nulla justo quam, consequat ut nunc a, vulputate convallis felis.'} /></Zoom>
+      <Zoom><Card heading={'Стакло'} bodyText={'Suspendisse id laoreet dolor. Donec congue, quam id ultrices pulvinar, dolor neque placerat nulla, eu vehicula nunc neque vel eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec placerat diam at tempor varius. Proin dapibus erat in nulla varius, eu finibus justo interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ex ut nisi ullamcorper, non ornare nunc porta. Nulla sodales elementum fringilla. Curabitur dui elit, gravida ac iaculis eget, ullamcorper eget ipsum. Nulla justo quam, consequat ut nunc a, vulputate convallis felis.'} /></Zoom>
+      <Zoom><Card heading={'Пластика'} bodyText={'Suspendisse id laoreet dolor. Donec congue, quam id ultrices pulvinar, dolor neque placerat nulla, eu vehicula nunc neque vel eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec placerat diam at tempor varius. Proin dapibus erat in nulla varius, eu finibus justo interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ex ut nisi ullamcorper, non ornare nunc porta. Nulla sodales elementum fringilla. Curabitur dui elit, gravida ac iaculis eget, ullamcorper eget ipsum. Nulla justo quam, consequat ut nunc a, vulputate convallis felis.'} /></Zoom>
+      <Zoom><Card heading={'Метал'} bodyText={'Suspendisse id laoreet dolor. Donec congue, quam id ultrices pulvinar, dolor neque placerat nulla, eu vehicula nunc neque vel eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec placerat diam at tempor varius. Proin dapibus erat in nulla varius, eu finibus justo interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies ex ut nisi ullamcorper, non ornare nunc porta. Nulla sodales elementum fringilla. Curabitur dui elit, gravida ac iaculis eget, ullamcorper eget ipsum. Nulla justo quam, consequat ut nunc a, vulputate convallis felis.'} /></Zoom>
       </div>
 
       <div id="mapa" className="container">
