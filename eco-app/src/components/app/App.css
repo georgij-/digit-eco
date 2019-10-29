@@ -159,6 +159,20 @@ html, body, #root {
   background-color: #f9f9f9;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.legend-item {
+  flex: 1;
+  border-radius: 10px;
+  margin: 2rem; 
+  background-color: #f9f9f9;
+}
+
 .card_header {
   background-color: #f9f9f9;
   padding: 0 2rem 0 2rem;
@@ -198,7 +212,7 @@ html, body, #root {
   z-index: 0;
 }
 #mapa {
-  background: #F8F4F0;
+  background: rgb(190, 188, 186);
   position: relative;
   align-items: center;
   padding-top: 4rem;

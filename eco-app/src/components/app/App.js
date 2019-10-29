@@ -42,6 +42,20 @@ function App() {
 
       <div id="mapa" className="container">
         <h1>Мапа на центри за рециклирање во Скопје</h1>
+        <div className="row">
+          <div className="legend-item">
+            <h6>Staklo proba</h6>
+          </div>
+          <div className="legend-item">
+          <h6>Staklo proba</h6>
+          </div>
+          <div className="legend-item">
+          <h6>Staklo proba</h6>
+          </div>
+          <div className="legend-item">
+          <h6>Staklo proba</h6>
+          </div>
+        </div>
         <Mapi/>
       </div>
 
