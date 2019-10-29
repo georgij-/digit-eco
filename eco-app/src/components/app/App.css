@@ -73,6 +73,18 @@ html, body, #root {
 
 .card {
   flex: 1;
+  border-radius: 10px;
+  margin: 2rem; 
+  background-color: #f9f9f9;
+}
+.card_header {
+  background-color: #f9f9f9;
+  padding: 0 2rem 0 2rem;
+}
+.card_body {
+  background-color: #fcfcfc;
+  padding: 0 2rem 2rem 2rem;
+  height: 100%;
 }
 
 #steps {
