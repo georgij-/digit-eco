@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Map() {
+function Mapi() {
     return(
-        <div className='map'>
+        <div className='mapi'>
             <h2>Tuka e naslovot za mapa</h2>
         </div>
     );
 }
 
-export default Map;
+export default Mapi;

@@ -5,8 +5,8 @@ import HeroText from '../herotext/HeroText';
 import HeroCalculator from '../herocalculator/HeroCalculator';
 import Card from '../card/Card';
 import Step from '../step/Step';
-import Map from '../map/Map';
 import Contact from '../contact/Contact';
+import Mapi from '../mapi/Mapi';
 
 function App() {
   return (
@@ -36,8 +36,8 @@ function App() {
         <Card />
       </div>
 
-      <div id="map" className="container">
-        <Map/>
+      <div id="mapa" className="container">
+        <Mapi/>
       </div>
 
       <div id="contact" className="container">
