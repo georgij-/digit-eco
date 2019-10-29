@@ -132,15 +132,8 @@ html, body, #root {
   border-radius: 5px;
   padding: 1rem 2rem 2rem 2rem;
 }
-<<<<<<< HEAD
 
-.contact {
- 
-}
 
-#contact {
-  background: rgb(245, 182, 213);
-=======
 .mapi {
   width: 100%;
   height: 60%;
@@ -162,5 +155,4 @@ html, body, #root {
   width: 100px;
   position: relative;
   float: left;
->>>>>>> bfb699271dfa125e606cd80d21707e4e74650957
 }
