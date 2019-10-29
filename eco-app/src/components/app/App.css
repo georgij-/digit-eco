@@ -29,19 +29,73 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
 }
+@keyframes slidein {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.15;
 
+  }
+
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: .85;
+  }
+  65% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slidein-right {
+  from {
+    transform: translateX(200%);
+    opacity: 0.85;
+  }
+
+  to {
+    transform: translateX(50%);
+    opacity: 1;
+  }
+}
 #hero::before {
   position: absolute;
-  top: 5%;
-  left: -10%;
+  top: -5%;
+  left: 5%;
   content: "";
   display: block;
   transform: rotate(30deg);
   background-color: #66CD00;
-  height: 1000px;
-  width: 3000px;
+  height: 800px;
+  width: 800px;
+  border-radius: 1000px;
   overflow: hidden;
   z-index: 0;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+#hero::after {
+  position: absolute;
+  bottom: -25%;
+  right: 5%;
+  content: "";
+  display: block;
+  transform: rotate(30deg);
+  background-color: #66CD00;
+  height: 800px;
+  width: 800px;
+  border-radius: 1000px;
+  overflow: hidden;
+  transform: translateX(50%);
+
+  z-index: 0;
+  animation-name: slidein-right;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 html, body, #root {
