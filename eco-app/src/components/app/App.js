@@ -7,6 +7,8 @@ import Card from '../card/Card';
 import Step from '../step/Step';
 import Contact from '../contact/Contact';
 import Mapi from '../mapi/Mapi';
+import Zoom from 'react-reveal/Zoom';
+
 
 function App() {
   return (
@@ -26,16 +28,16 @@ function App() {
       </div>
 
       <div id="steps" className="container">
-        <Step/>
-        <Step/>
-        <Step/>
+      <Zoom><Step/></Zoom>
+      <Zoom><Step/></Zoom>        
+      <Zoom><Step/></Zoom>
       </div>
 
       <div id="cards" className="container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card heading={'Хартија'} bodyText={'Test Text'} />
+        <Card heading={'Стакло'} bodyText={'Test Text1'} />
+        <Card heading={'Пластика'} bodyText={'Test Text2'} />
+        <Card heading={'Метал'} bodyText={'Test Text3'} />
       </div>
 
       <div id="mapa" className="container">
