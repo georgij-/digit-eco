@@ -6,6 +6,7 @@ import HeroCalculator from '../herocalculator/HeroCalculator';
 import Card from '../card/Card';
 import Step from '../step/Step';
 import Map from '../map/Map';
+import Contact from '../contact/Contact';
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
       </div>
 
       <div id="contact" className="container">
-        <h1>TEst</h1>
+        <Contact/>
       </div>
 
 

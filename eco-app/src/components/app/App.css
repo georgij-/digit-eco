@@ -6,6 +6,10 @@
   height: 40vmin;
 }
 
+.App-link {
+  color: #09d3ac;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -14,12 +18,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
 #hero {
   /* background-color: #F6F9FC; */
   color: #fff;
   position: relative;
   overflow: hidden;
 }
+
 #hero::before {
   position: absolute;
   top: 5%;
@@ -34,10 +40,6 @@
   z-index: -1;
 }
 
-.App-link {
-  color: #09d3ac;
-}
-
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -49,6 +51,7 @@ html, body, #root {
   margin: 0 auto;
   display: flex;
 }
+
 .SplitPane h1 {
   font-size: calc(18px + 2vmin);
 
@@ -64,13 +67,16 @@ html, body, #root {
   flex-basis: 60%;
   position: relative;
 }
+
 .hero-text {
   margin-top: 6rem;
 }
+
 .hero-text p {
   font-size: 1.2rem;
 
 }
+
 .calculator {
   background: #fff;
   color: #000;
@@ -86,16 +92,19 @@ html, body, #root {
   padding: 3rem;
   background-color: #F6F9FC;
 }
+
 .card {
   flex: 1;
   border-radius: 10px;
   margin: 2rem; 
   background-color: #f9f9f9;
 }
+
 .card_header {
   background-color: #f9f9f9;
   padding: 0 2rem 0 2rem;
 }
+
 .card_body {
   background-color: #fcfcfc;
   padding: 1rem 2rem 2rem 2rem;
@@ -112,4 +121,8 @@ html, body, #root {
 
 .step {
   flex: 1;
+  background-color: rgb(180, 176, 176);
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 1rem 2rem 2rem 2rem;
 }
