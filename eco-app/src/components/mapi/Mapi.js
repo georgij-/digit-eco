@@ -6,7 +6,7 @@ import Overlay from 'pigeon-overlay';
 function Mapi() {
     return(
         <div className='mapi'>
-            <Map center={[42.0050, 21.4408]} zoom={13} height={400}>
+            <Map center={[42.0050, 21.4408]} zoom={13} height={600} metaWheelZoom={true}>
       <Marker anchor={[42.0050, 21.4408]} payload={1} onClick={({ event, anchor, payload }) => {}} />
    
       {/* <Overlay anchor={[42.0050, 21.4408]} offset={[120, 79]}>
