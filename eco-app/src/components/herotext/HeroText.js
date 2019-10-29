@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroCalculator from '../herocalculator/HeroCalculator';
 
 
 function HeroText() {

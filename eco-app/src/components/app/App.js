@@ -14,6 +14,8 @@ function App() {
     <div className="app-wrapper">
       
       <div id="hero" className="container">
+      <img className="main-logo" src="https://img.icons8.com/color/120/000000/recycle-sign.png" />
+
       <Hero
       left={
         <HeroText />
@@ -37,6 +39,7 @@ function App() {
       </div>
 
       <div id="mapa" className="container">
+        <h1>Мапа на центри за рециклирање во Скопје</h1>
         <Mapi/>
       </div>
 
