@@ -5,6 +5,7 @@ import HeroText from '../herotext/HeroText';
 import HeroCalculator from '../herocalculator/HeroCalculator';
 import Card from '../card/Card';
 import Step from '../step/Step';
+import Map from '../map/Map';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
       </div>
 
       <div id="map" className="container">
-        <h1>TEst</h1>
+        <Map/>
       </div>
 
       <div id="contact" className="container">
