@@ -15,8 +15,23 @@
   font-size: calc(10px + 2vmin);
 }
 #hero {
-  background-color: #66CD00;
+  /* background-color: #F6F9FC; */
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+#hero::before {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  content: "";
+  display: block;
+  transform: rotate(30deg);
+  background-color: #66CD00;
+  height: 1000px;
+  width: 3000px;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .App-link {
@@ -60,7 +75,7 @@ html, body, #root {
   background: #fff;
   color: #000;
   height: 500px;
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 6rem;
   padding: 2rem;
 }
@@ -69,8 +84,8 @@ html, body, #root {
   display: flex;
   flex-direction: row;
   padding: 3rem;
+  background-color: #F6F9FC;
 }
-
 .card {
   flex: 1;
   border-radius: 10px;
@@ -83,7 +98,9 @@ html, body, #root {
 }
 .card_body {
   background-color: #fcfcfc;
-  padding: 0 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  min-height: 300px;
+  display: block;
   height: 100%;
 }
 
