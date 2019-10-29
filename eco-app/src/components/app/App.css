@@ -65,14 +65,22 @@ html, body, #root {
   padding: 2rem;
 }
 
-.Contacts {
-  width: 100%;
-  height: 100%; 
-  background: lightblue;
+#cards {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
 }
 
-.Chat {
-  width: 100%;
-  height: 100%; 
-  background: pink;
+.card {
+  flex: 1;
+}
+
+#steps {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.step {
+  flex: 1;
 }
