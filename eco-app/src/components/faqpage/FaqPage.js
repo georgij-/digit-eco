@@ -4,6 +4,7 @@ import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
+import Zoom from 'react-reveal/Zoom';
 
 const ExpansionPanel = withStyles({
   root: {
@@ -56,6 +57,7 @@ export default function FaqPanel() {
   return (
     <div id="faq">
       <h1 className="faq-hero">Често Поставувани Прашања</h1>
+      <Zoom>
       <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>Collapsible Group Item #1</Typography>
@@ -92,6 +94,7 @@ export default function FaqPanel() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
+      </Zoom>
     </div>
   );
 }

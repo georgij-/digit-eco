@@ -16,7 +16,7 @@ function HeroCalculator() {
         <br />        <br />
         <RadioButtons />
         <h1>Ќе добиете</h1>
-
+        <span className="calculatorResult"></span>
     </div>
   );
 }
