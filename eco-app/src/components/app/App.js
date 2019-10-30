@@ -19,6 +19,7 @@ import Fade from 'react-reveal/Fade';
 import ButtonContact from '../contact/ButtonContact';
 import HeroMeni from '../meni/HeroMeni';
 import FaqPage from '../faqpage/FaqPage';
+import ContactPage from '../contactpage/ContactPage';
 
 
 
@@ -131,12 +132,7 @@ function Faq() {
 function ContactNav() {
   return(
     <div>
-      <h2>CONTAAAAAACT</h2>
-    <h2>CONTAAAAAACT</h2>
-    <h2>CONTAAAAAACT</h2>
-    <h2>CONTAAAAAACT</h2>
-    <h2>CONTAAAAAACT</h2>
-    <h2>CONTAAAAAACT</h2>
+      <ContactPage/>
     </div>
   );
 }
