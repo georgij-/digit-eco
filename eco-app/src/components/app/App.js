@@ -95,17 +95,17 @@ function Home() {
       <div id="mapa" className="container">
         <h1>Мапа на центри за рециклирање во Скопје</h1>
         <div className="row">
-          <div className="legend-item">
+          <div id="staklo-zeleno" className="legend-item">
             <h6>Staklo proba</h6>
           </div>
-          <div className="legend-item">
-          <h6>Staklo proba</h6>
+          <div id="metal-crveno" className="legend-item">
+          <h6>Metal proba</h6>
           </div>
-          <div className="legend-item">
-          <h6>Staklo proba</h6>
+          <div id="plastika-zolto" className="legend-item">
+          <h6>Plastika proba</h6>
           </div>
-          <div className="legend-item">
-          <h6>Staklo proba</h6>
+          <div id="hartija-plavo" className="legend-item">
+          <h6>Hartija proba</h6>
           </div>
         </div>
         <Mapi/>

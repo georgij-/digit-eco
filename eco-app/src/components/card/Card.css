@@ -1,0 +1,60 @@
+#cards {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    background-color: #fff;
+    position: relative;
+  }
+
+  #cards:before {
+    content:"Дали знаевте дека";
+    font-size: 3rem;
+    position: absolute;
+    color: #66CD00;
+    font-weight: 700;
+    top: 5%;
+  }
+  
+  .card {
+    flex: 1;
+    border-radius: 10px;
+    margin: 2rem; 
+    background-color: #f9f9f9;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005)
+  }
+
+  .card_header {
+    background-color: #f9f9f9;
+    padding: 1rem 2rem 1rem 2rem;
+    display: block;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .card_header h4 {
+    margin: 0 auto;
+  }
+
+  .card_header::after {
+    content: "";
+    display: block;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    background-image: url('../../assets/images/info-icon.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+  
+  .card_body {
+    background-color: #fcfcfc;
+    padding: 1rem 2rem 2rem 2rem;
+    min-height: 300px;
+    display: block;
+    height: 100%;
+  }

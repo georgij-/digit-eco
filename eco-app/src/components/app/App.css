@@ -206,76 +206,31 @@ html, body, #root {
   position: relative;
 }
 
-#cards {
-  display: flex;
-  flex-direction: row;
-  padding: 3rem;
-  background-color: #fff;
-  position: relative;
-}
-#cards:before {
-  content:"Дали знаевте дека";
-  font-size: 3rem;
-  position: absolute;
-  color: #66CD00;
-  font-weight: 700;
-  top: 5%;
-}
-
-.card {
-  flex: 1;
-  border-radius: 10px;
-  margin: 2rem; 
-  background-color: #f9f9f9;
-  box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005)
-}
-
 .row {
   display: flex;
   flex-direction: row;
   padding: 3rem;
   background-color: #fff;
+  width: 80%;
+  align-content: center;
 }
 
 .legend-item {
   flex: 1;
+  flex-basis: 45%;
   border-radius: 10px;
-  margin: 2rem; 
+  margin: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 0;
   background-color: #f9f9f9;
+  position: relative;
+  height: 5%;
+  width: 5%;
+  align-content: center;
+  top: 50%;
 }
 
-.card_header {
-  background-color: #f9f9f9;
-  padding: 1rem 2rem 1rem 2rem;
-  display: block;
-  position: relative;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.card_header h4 {
-  margin: 0 auto;
-}
-.card_header::after {
-  content: "";
-  display: block;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  padding: 1rem;
-  position: absolute;
-  background-image: url('../../assets/images/info-icon.png');
-  background-size: contain;
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-.card_body {
-  background-color: #fcfcfc;
-  padding: 1rem 2rem 2rem 2rem;
-  min-height: 300px;
-  display: block;
-  height: 100%;
-}
 #first {
   background-image: url('../../assets/images/1.png');
   background-size: contain;
@@ -411,4 +366,74 @@ background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 1
 background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
 background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
+}
+#staklo-zeleno {
+  position: relative;
+  height: 80px;
+}
+
+#staklo-zeleno > h6 {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+#staklo-zeleno::after {
+  content: "";
+  display: block;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  background-image: url('../../assets/images/staklo-icon.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#metal-crveno::after {
+  content: "";
+  display: block;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  background-image: url('../../assets/images/metal-icon.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#plastika-zolto::after {
+  content: "";
+  display: block;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  background-image: url('../../assets/images/plastika-icon.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#hartija-plavo::after {
+  content: "";
+  display: block;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  background-image: url('../../assets/images/hartija-icon.png');
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
 }
