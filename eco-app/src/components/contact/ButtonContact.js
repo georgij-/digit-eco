@@ -1,11 +1,25 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+  input: {
+    display: 'none',
+  },
+}));
 
 function ButtonContact() {
-    return(
-        <div className="buttonContact">
-            <h6>kopce shto ke nosi na druga strana za kontakt</h6>
-        </div>
-    );
+  const classes = useStyles();
+  return (
+    <div>
+      <Button variant="contained" color="primary" className={classes.button}>
+        Kopce za Kontakt
+      </Button>
+    </div>
+  );
 }
 
 export default ButtonContact;
