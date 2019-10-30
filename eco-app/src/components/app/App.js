@@ -62,7 +62,7 @@ function App() {
         <Mapi/>
       </div>
 
-      <div id="contact" className="container">
+      <div id="contact" className="container-contact">
         <Contact/>
         <ButtonContact/>
       </div>
