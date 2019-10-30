@@ -14,8 +14,9 @@ function HeroCalculator() {
           }}
         />
         <br />        <br />
-
         <RadioButtons />
+        <h1>Ќе добиете</h1>
+
     </div>
   );
 }
