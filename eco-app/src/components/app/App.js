@@ -9,6 +9,7 @@ import Contact from '../contact/Contact';
 import Mapi from '../mapi/Mapi';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
+import ButtonContact from '../contact/ButtonContact';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
 
       <div id="contact" className="container">
         <Contact/>
+        <ButtonContact/>
       </div>
 
 
