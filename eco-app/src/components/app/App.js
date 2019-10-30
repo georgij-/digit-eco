@@ -10,6 +10,7 @@ import Mapi from '../mapi/Mapi';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import ButtonContact from '../contact/ButtonContact';
+import HeroMeni from '../meni/HeroMeni';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <div id="hero" className="container">
       <img className="main-logo" src="https://img.icons8.com/color/120/000000/recycle-sign.png" />
       <h4 className="main-logo-text">Recycle 'N' GO</h4>
+      <HeroMeni/>
       <Hero
       left={
         <HeroText />
