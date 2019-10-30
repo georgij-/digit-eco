@@ -1,32 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,700&display=swap&subset=cyrillic');
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: .5rem;
   font-family: 'IBM Plex Serif', serif;
   text-transform: none;
   font-weight: 700;
   color: #66CD00;
 }
+
 MuiTypography-h6 {
   color: #fff;
 }
-::before, ::after {
+
+::before,
+::after {
   font-family: 'IBM Plex Serif', serif;
   text-transform: none;
   font-weight: 700;
   color: #66CD00;
 }
+
 .hero_head {
   color: #fff;
 }
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
 
 }
+
 p {
   font-size: 1.2rem;
   line-height: 1.4;
 }
+
 .App {
   text-align: center;
 }
@@ -47,6 +59,7 @@ p {
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
 .container-contact {
   display: flex;
   flex-direction: column;
@@ -62,6 +75,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+
 @keyframes slidein {
   0% {
     transform: scale(0.2);
@@ -73,15 +87,18 @@ p {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(0.9);
     opacity: .85;
   }
+
   65% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes slidein-right {
   from {
     transform: translateX(200%);
@@ -93,6 +110,7 @@ p {
     opacity: 1;
   }
 }
+
 #hero::before {
   position: absolute;
   top: -5%;
@@ -130,11 +148,12 @@ p {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
 }
+
 #form {
   background: #fff;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .005), 0 -6px 16px -6px rgba(0, 0, 0, .005);
   min-width: 520px;
 }
 
@@ -155,38 +174,45 @@ p {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
+
 #faq {
   margin-top: 180px;
 }
-#faq > div {
+
+#faq>div {
   width: 60%;
   margin: 0 auto;
 }
+
 .faq-hero {
   text-align: center;
   color: #000;
   position: relative;
-} 
+}
+
 #faq::before {
-    position: absolute;
-    top: -5%;
-    left: 5%;
-    content: "";
-    display: block;
-    transform: rotate(30deg);
-    background-color: #66CD00;
-    height: 800px;
-    width: 800px;
-    border-radius: 1000px;
-    overflow: hidden;
-    z-index: 0;
-    animation-name: slidein;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out; 
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  content: "";
+  display: block;
+  transform: rotate(30deg);
+  background-color: #66CD00;
+  height: 800px;
+  width: 800px;
+  border-radius: 1000px;
+  overflow: hidden;
+  z-index: 0;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
-.main-logo-text {
-}
-html, body, #root {
+
+.main-logo-text {}
+
+html,
+body,
+#root {
   width: 100%;
   height: 100%;
 }
@@ -223,11 +249,13 @@ html, body, #root {
   font-size: 1.2rem;
 
 }
+
 .makeStyles-root-1 {
   position: absolute;
   right: 5%;
   top: 5%;
 }
+
 .main-header {
   position: absolute;
   display: block;
@@ -239,16 +267,19 @@ html, body, #root {
   height: 90px;
   background: transparent;
 }
+
 .main-menu li {
   display: inline;
   padding: 12px;
   background: #fff;
   margin: 5px;
 }
+
 .main-menu li a {
   text-decoration: none;
 
 }
+
 .calculator {
   background: #fff;
   color: #000;
@@ -256,7 +287,7 @@ html, body, #root {
   border-radius: 10px;
   margin: 6rem;
   padding: 2rem;
-  box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .005), 0 -6px 16px -6px rgba(0, 0, 0, .005);
   position: relative;
 }
 
@@ -267,8 +298,9 @@ html, body, #root {
   background-color: #fff;
   position: relative;
 }
+
 #cards:before {
-  content:"Дали знаевте дека";
+  content: "Дали знаевте дека";
   font-size: 3rem;
   position: absolute;
   color: #66CD00;
@@ -279,9 +311,9 @@ html, body, #root {
 .card {
   flex: 1;
   border-radius: 10px;
-  margin: 2rem; 
+  margin: 2rem;
   background-color: #f9f9f9;
-  box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005)
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .005), 0 -6px 16px -6px rgba(0, 0, 0, .005)
 }
 
 .row {
@@ -294,7 +326,7 @@ html, body, #root {
 .legend-item {
   flex: 1;
   border-radius: 10px;
-  margin: 2rem; 
+  margin: 2rem;
   background-color: #f9f9f9;
 }
 
@@ -306,9 +338,11 @@ html, body, #root {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+
 .card_header h4 {
   margin: 0 auto;
 }
+
 .card_header::after {
   content: "";
   display: block;
@@ -323,6 +357,7 @@ html, body, #root {
   background-position: right center;
   background-repeat: no-repeat;
 }
+
 .card_body {
   background-color: #fcfcfc;
   padding: 1rem 2rem 2rem 2rem;
@@ -330,6 +365,7 @@ html, body, #root {
   display: block;
   height: 100%;
 }
+
 #first {
   background-image: url('../../assets/images/1.png');
   background-size: contain;
@@ -337,12 +373,14 @@ html, body, #root {
   background-repeat: no-repeat;
   position: relative;
 }
+
 #first::after {
   position: absolute;
   bottom: -10%;
   left: 0;
   content: "прв чекор";
 }
+
 #second {
   background-image: url('../../assets/images/2.png');
   background-size: contain;
@@ -350,12 +388,14 @@ html, body, #root {
   background-repeat: no-repeat;
   position: relative;
 }
+
 #second::after {
   position: absolute;
   bottom: -10%;
   left: 0;
   content: "прв чекор";
 }
+
 #third {
   background-image: url('../../assets/images/2.png');
   background-size: contain;
@@ -363,6 +403,7 @@ html, body, #root {
   background-repeat: no-repeat;
   position: relative;
 }
+
 #third::after {
   position: absolute;
   bottom: -10%;
@@ -377,6 +418,7 @@ html, body, #root {
   background: #F6F9FC;
   position: relative;
 }
+
 #steps::after {
   content: "";
   display: block;
@@ -385,15 +427,17 @@ html, body, #root {
   position: absolute;
   bottom: 0;
   height: 10px;
-  background: rgb(0,205,51);
-background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
+  background: rgb(0, 205, 51);
+  background: -moz-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33", endColorstr="#00cd8d", GradientType=1);
 }
+
 .react-reveal {
   flex: 1;
 }
+
 .step {
   flex: 1;
   margin: 2rem;
@@ -412,6 +456,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endCo
   left: 0;
   z-index: 0;
 }
+
 #mapa {
   background: #fff;
   position: relative;
@@ -419,12 +464,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endCo
   padding-top: 4rem;
   justify-content: flex-start;
 }
+
 .main-logo {
   display: block;
   width: 100px;
   position: relative;
   float: left;
 }
+
 #contact {
   width: 60%;
   margin: 0 auto;
@@ -432,12 +479,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endCo
   flex-direction: row;
   position: relative;
 }
+
 #contact div {
   flex: 3;
 }
+
 #contact div:last-child {
   flex: 1;
 }
+
 #mapa::before {
   content: "";
   display: block;
@@ -446,12 +496,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endCo
   position: absolute;
   top: 0;
   height: 10px;
-  background: rgb(0,205,51);
-background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
+  background: rgb(0, 205, 51);
+  background: -moz-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33", endColorstr="#00cd8d", GradientType=1);
 }
+
 #mapa::after {
   content: "";
   display: block;
@@ -460,9 +511,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endCo
   position: absolute;
   bottom: 0;
   height: 10px;
-  background: rgb(0,205,51);
-background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
+  background: rgb(0, 205, 51);
+  background: -moz-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  background: linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33", endColorstr="#00cd8d", GradientType=1);
 }
