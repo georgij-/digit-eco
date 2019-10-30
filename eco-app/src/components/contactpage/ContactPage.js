@@ -1,14 +1,11 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom';
+import ContactForm from '../contactform/ContactForm';
 
 function ContactPage() {
     return(
-        <div>
-            <h2>CONTAAAAAACT</h2>
-            <h2>CONTAAAAAACT</h2>
-            <h2>CONTAAAAAACT</h2>
-            <h2>CONTAAAAAACT</h2>
-            <h2>CONTAAAAAACT</h2>
-            <h2>CONTAAAAAACT</h2>
+        <div id="contactPage" className="container">
+            <Zoom><ContactForm/></Zoom>
         </div>
     );
 }
