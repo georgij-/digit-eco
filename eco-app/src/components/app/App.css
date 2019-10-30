@@ -174,7 +174,27 @@ html, body, #root {
   right: 5%;
   top: 5%;
 }
+.main-header {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 25%;
+  z-index: 9;
+  height: 90px;
+  background: transparent;
+}
+.main-menu li {
+  display: inline;
+  padding: 12px;
+  background: #fff;
+  margin: 5px;
+}
+.main-menu li a {
+  text-decoration: none;
 
+}
 .calculator {
   background: #fff;
   color: #000;
