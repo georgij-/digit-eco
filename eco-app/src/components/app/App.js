@@ -95,7 +95,11 @@ function Home() {
       <div id="mapa" className="container">
         <h1>Мапа на центри за рециклирање во Скопје</h1>
         <div className="row">
+<<<<<<< HEAD
         <div id="staklo-zeleno" className="legend-item">
+=======
+          <div id="staklo-zeleno" className="legend-item">
+>>>>>>> cb1fe37fe57df2cbe2c7304a86b319b0a5ae4024
             <h6>Staklo proba</h6>
           </div>
           <div id="metal-crveno" className="legend-item">

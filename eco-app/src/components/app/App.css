@@ -321,10 +321,13 @@ body,
   flex-direction: row;
   padding: 3rem;
   background-color: #fff;
+  width: 80%;
+  align-content: center;
 }
 
 .legend-item {
   flex: 1;
+  flex-basis: 45%;
   border-radius: 10px;
   margin: 2rem;
   background-color: #f9f9f9;
@@ -332,8 +335,6 @@ body,
 
 .card_header {
   background-color: #f9f9f9;
-  padding: 1rem 2rem 1rem 2rem;
-  display: block;
   position: relative;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
