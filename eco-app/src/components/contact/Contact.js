@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return(
         <div className='contact'>
-            <h2>Tuka treba da bide kontakt formata</h2>
+            <h2>Сакате да дознаете повеќе околу процесот на рециклирање?</h2>
         </div>
     );
 }

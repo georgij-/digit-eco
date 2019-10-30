@@ -16,7 +16,7 @@ function ButtonContact() {
   return (
     <div>
       <Button variant="contained" color="primary" className={classes.button}>
-        Kopce za Kontakt
+        Контактирајте не веднаш!
       </Button>
     </div>
   );

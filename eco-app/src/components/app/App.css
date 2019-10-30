@@ -293,6 +293,21 @@ html, body, #root {
   flex-direction: row;
   padding: 3rem;
   background: #F6F9FC;
+  position: relative;
+}
+#steps::after {
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  background: rgb(0,205,51);
+background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
 }
 .react-reveal {
   flex: 1;
@@ -327,4 +342,45 @@ html, body, #root {
   width: 100px;
   position: relative;
   float: left;
+}
+#contact {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+#contact div {
+  flex: 3;
+}
+#contact div:last-child {
+  flex: 1;
+}
+#mapa::before {
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0 %;
+  position: absolute;
+  top: 0;
+  height: 10px;
+  background: rgb(0,205,51);
+background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
+}
+#mapa::after {
+  content: "";
+  display: block;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  background: rgb(0,205,51);
+background: -moz-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+background: linear-gradient(45deg, rgba(0,205,51,1) 0%, rgba(0,205,141,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33",endColorstr="#00cd8d",GradientType=1);
 }
