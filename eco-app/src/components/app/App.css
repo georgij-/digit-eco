@@ -130,6 +130,60 @@ p {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
 }
+#form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.1), 0 8px 16px -8px rgba(0,0,0,.005), 0 -6px 16px -6px rgba(0,0,0,.005);
+  min-width: 520px;
+}
+
+#contactPage::before {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  content: "";
+  display: block;
+  transform: rotate(30deg);
+  background-color: #66CD00;
+  height: 800px;
+  width: 800px;
+  border-radius: 1000px;
+  overflow: hidden;
+  z-index: 0;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+#faq {
+  margin-top: 180px;
+}
+#faq > div {
+  width: 60%;
+  margin: 0 auto;
+}
+.faq-hero {
+  text-align: center;
+  color: #000;
+  position: relative;
+} 
+#faq::before {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    content: "";
+    display: block;
+    transform: rotate(30deg);
+    background-color: #66CD00;
+    height: 800px;
+    width: 800px;
+    border-radius: 1000px;
+    overflow: hidden;
+    z-index: 0;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; 
+}
 .main-logo-text {
 }
 html, body, #root {
