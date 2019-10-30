@@ -169,6 +169,11 @@ html, body, #root {
   font-size: 1.2rem;
 
 }
+.makeStyles-root-1 {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
 
 .calculator {
   background: #fff;

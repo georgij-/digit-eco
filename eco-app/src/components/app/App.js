@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 import '../app/App.css';
 import Hero from '../hero/Hero';
 import HeroText from '../herotext/HeroText';
@@ -11,6 +18,7 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import ButtonContact from '../contact/ButtonContact';
 import HeroMeni from '../meni/HeroMeni';
+
 
 
 function App() {

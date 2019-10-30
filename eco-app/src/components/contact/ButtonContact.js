@@ -15,7 +15,7 @@ function ButtonContact() {
   const classes = useStyles();
   return (
     <div>
-      <Button variant="contained" color="primary" className={classes.button}>
+      <Button variant="contained" color="green" className={classes.button}>
         Контактирајте не веднаш!
       </Button>
     </div>
