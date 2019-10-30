@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Step() {
-    return(
-        <div className='step'>
-            <h2>Eden cekor za recikliranje</h2>
-            <p>
-                Lorem ipsum
-            </p>
+class Step extends Component {
+  render() {
+    // const heading = 'Welcome to React';
+    // const bodyText = 'Text on the body';
+    return (
+        <div className="step" id={this.props.background}>
         </div>
     );
+  }
 }
-
 export default Step;
+  

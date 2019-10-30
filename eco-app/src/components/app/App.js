@@ -30,9 +30,9 @@ function App() {
       </div>
 
       <div id="steps" className="container">
-      <Zoom><Step/></Zoom>
-      <Zoom><Step/></Zoom>        
-      <Zoom><Step/></Zoom>
+      <Zoom><Step background={'first'}/></Zoom>
+      <Zoom><Step background={'second'}/></Zoom>        
+      <Zoom><Step background={'third'}/></Zoom>
       </div>
 
       <div id="cards" className="container">

@@ -248,6 +248,45 @@ html, body, #root {
   display: block;
   height: 100%;
 }
+#first {
+  background-image: url('../../assets/images/1.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#first::after {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  content: "прв чекор";
+}
+#second {
+  background-image: url('../../assets/images/2.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#second::after {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  content: "прв чекор";
+}
+#third {
+  background-image: url('../../assets/images/2.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#third::after {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  content: "прв чекор";
+}
 
 #steps {
   display: flex;
@@ -255,13 +294,15 @@ html, body, #root {
   padding: 3rem;
   background: #F6F9FC;
 }
-
+.react-reveal {
+  flex: 1;
+}
 .step {
   flex: 1;
-  background-color: rgb(180, 176, 176);
   margin: 2rem;
   border-radius: 5px;
   padding: 1rem 2rem 2rem 2rem;
+  min-height: 400px;
 }
 
 
