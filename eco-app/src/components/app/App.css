@@ -287,6 +287,12 @@ body,
 
 }
 
+.radio-btn {
+  display: block;
+  font-size: 1.2rem;
+  padding-top: .5rem;
+}
+
 .calculator {
   background: #fff;
   color: #000;
