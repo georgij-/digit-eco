@@ -20,7 +20,7 @@ import ButtonContact from '../contact/ButtonContact';
 import HeroMeni from '../meni/HeroMeni';
 import FaqPage from '../faqpage/FaqPage';
 import ContactPage from '../contactpage/ContactPage';
-
+import logo from '../../assets/images/logo-main.png';
 
 
 function App() {
@@ -28,17 +28,16 @@ function App() {
     <Router>
     <div>
       <nav class="main-header">
-      <img className="main-logo" src="https://img.icons8.com/color/120/000000/recycle-sign.png" />
-      <h4 className="main-logo-text">Recycle 'N' GO</h4>
+      <img className="main-logo" src={logo} />
         <ul class="main-menu">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">ДОМА</Link>
           </li>
           <li>
-            <Link to="/faq">Faq</Link>
+            <Link to="/faq">ЧПП</Link>
           </li>
           <li>
-            <Link to="/contactnav">Contact</Link>
+            <Link to="/contactnav">КОНТАКТ</Link>
           </li>
         </ul>
       </nav>
@@ -82,6 +81,7 @@ function Home() {
       <Zoom><Step background={'first'}/></Zoom>
       <Zoom><Step background={'second'}/></Zoom>        
       <Zoom><Step background={'third'}/></Zoom>
+      <Zoom><Step background={'fourth'}/></Zoom>
       </div>
 
       <div id="cards" className="container">
@@ -96,16 +96,16 @@ function Home() {
         <h1>Мапа на центри за рециклирање во Скопје</h1>
         <div className="row">
         <div id="staklo-zeleno" className="legend-item">
-            <h6>Staklo proba</h6>
+            <h6>Стакло</h6>
           </div>
           <div id="metal-crveno" className="legend-item">
-          <h6>Metal proba</h6>
+          <h6>Метал</h6>
           </div>
           <div id="plastika-zolto" className="legend-item">
-          <h6>Plastika proba</h6>
+          <h6>Пластика</h6>
           </div>
           <div id="hartija-plavo" className="legend-item">
-          <h6>Hartija proba</h6>
+          <h6>Хартија</h6>
           </div>
         </div>
         <Mapi/>

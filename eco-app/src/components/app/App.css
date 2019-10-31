@@ -259,24 +259,31 @@ body,
 .main-header {
   position: absolute;
   display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  width: 25%;
+  left: 0;
+  top: 2%;
+  width: 100%;
   z-index: 9;
   height: 90px;
   background: transparent;
 }
 
+.main-menu {
+  text-align: right;
+  padding-right: 1rem;
+  
+}
+
 .main-menu li {
   display: inline;
   padding: 12px;
-  background: #fff;
   margin: 5px;
+  font-weight: bold;
+  color: #000;
 }
 
 .main-menu li a {
   text-decoration: none;
+  color: #000;
 
 }
 
@@ -368,7 +375,7 @@ body,
 }
 
 #first {
-  background-image: url('../../assets/images/1.png');
+  background-image: url('../../assets/images/1step.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -378,12 +385,13 @@ body,
 #first::after {
   position: absolute;
   bottom: -10%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   content: "Сортирање";
 }
 
 #second {
-  background-image: url('../../assets/images/2.png');
+  background-image: url('../../assets/images/2step.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -393,12 +401,13 @@ body,
 #second::after {
   position: absolute;
   bottom: -10%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   content: "Собирање";
 }
 
 #third {
-  background-image: url('../../assets/images/2.png');
+  background-image: url('../../assets/images/3step.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -408,8 +417,25 @@ body,
 #third::after {
   position: absolute;
   bottom: -10%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   content: "Рециклирање";
+}
+
+#fourth {
+  background-image: url('../../assets/images/4step.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#fourth::after {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "Нов продукт";
 }
 
 #steps {
@@ -433,6 +459,44 @@ body,
   background: -webkit-linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
   background: linear-gradient(45deg, rgba(0, 205, 51, 1) 0%, rgba(0, 205, 141, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00cd33", endColorstr="#00cd8d", GradientType=1);
+}
+.legend-item > h6 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15%;
+}
+.legend-item {
+  position: relative !important;
+  height: 80px;
+  background: transparent;
+}
+#staklo-zeleno {
+  background-image: url('../../assets/images/staklo-icon.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#metal-crveno {
+  background-image: url('../../assets/images/metal-icon.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#plastika-zolto {
+  background-image: url('../../assets/images/plastika-icon.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#hartija-plavo {
+  background-image: url('../../assets/images/hartija-icon.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .react-reveal {
@@ -469,8 +533,10 @@ body,
 .main-logo {
   display: block;
   width: 100px;
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #contact {
