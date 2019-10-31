@@ -379,7 +379,7 @@ body,
   position: absolute;
   bottom: -10%;
   left: 0;
-  content: "прв чекор";
+  content: "Сортирање";
 }
 
 #second {
@@ -394,7 +394,7 @@ body,
   position: absolute;
   bottom: -10%;
   left: 0;
-  content: "прв чекор";
+  content: "Собирање";
 }
 
 #third {
@@ -409,7 +409,7 @@ body,
   position: absolute;
   bottom: -10%;
   left: 0;
-  content: "прв чекор";
+  content: "Рециклирање";
 }
 
 #steps {
