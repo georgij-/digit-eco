@@ -57,7 +57,6 @@ export default function FaqPanel() {
   return (
     <div id="faq">
       <h1 className="faq-hero">Често Поставувани Прашања</h1>
-      <Zoom>
       <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>Дали рециклирањето е најдобрата опција? Кои други опции постојат?</Typography>
@@ -132,7 +131,6 @@ export default function FaqPanel() {
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
-      </Zoom>
     </div>
   );
 }

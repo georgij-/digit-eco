@@ -62,7 +62,7 @@ form {
   }
   form #input-submit {
     color: white;
-    background: rgb(0, 205, 51);
+    background: #66CD00;
     cursor: pointer;
     font-size: 1rem;
   }
@@ -95,5 +95,9 @@ form {
   
   .cf:after {
     clear: both;
+  }
+
+  .contact-wrapper {
+      position: relative;
   }
 
