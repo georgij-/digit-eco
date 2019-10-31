@@ -1,25 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
 // import RadioButtons from './RadioButtons';
 
-function HeroCalculator() {
-  const [input, setInput] = useState(''); // '' is the initial state value
+class HeroCalculator extends React.Component{
+    
+    constructor(props){
+        super(props);
+        this.state = {plasticFactor : 0.5, paperFactor: 0.3, glassFactor: 0.8, currentFactor: -1, inputValue: NaN};
+    }
+    
+    render(){
+        var value = "";
+        if(this.state.currentFactor != -1 && !isNaN(this.state.inputValue)){
+                    value = this.state.currentFactor * this.state.inputValue;
+                    value.toFixed(2);
+        }
 
-    return (
-      <div className="calculator">
-        <h1>Информативна пресметка</h1>
-        <p>Пресметајте колку суров материјал за рециклирање е потребен за да се добие еден од следниве прозиводи:</p>
-        <input type="text" onChange={(evt) => { console.log(evt.target.value); }} />
-        <span class="radio-btn"><input value={input} onInput={e => setInput(e.target.value)} type="radio"/>Пластика</span>
-        <span class="radio-btn"><input type="radio" />Хартија</span>
-        <span class="radio-btn"><input type="radio" />Стакло</span>
+        return (<div className="calculator">
+            <h1>Информативна пресметка</h1>
+            <p>Пресметајте колку суров материјал за рециклирање е потребен за да се добие еден од следниве прозиводи:</p>
+            <input type="text" onChange={(evt) => {
+                     this.setState({inputValue: parseInt(evt.target.value)}); 
+            }} />
 
-        <h1>Ќе добиете</h1>
-         <span className="calculatorResult"></span>
-      </div>
-    );
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.plasticFactor})}} />Пластика</span>
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.paperFactor})}} />Хартија</span>
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.glassFactor})}} />Стакло</span>
+            
+            <h1>Ќе добиете</h1>
+                <span className="calculatorResult">{value}</span>
+      </div>)
+    }
+
 }
-
 
 export default HeroCalculator;
