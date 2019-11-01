@@ -110,6 +110,23 @@ p {
     opacity: 1;
   }
 }
+#blog::before {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    content: "";
+    display: block;
+    transform: rotate(30deg);
+    background-color: #66CD00;
+    height: 800px;
+    width: 800px;
+    border-radius: 1000px;
+    overflow: hidden;
+    z-index: 0;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
 
 #hero::before {
   position: absolute;
@@ -156,6 +173,14 @@ p {
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .005), 0 -6px 16px -6px rgba(0, 0, 0, .005);
   min-width: 550px;
   
+}
+.post-blog {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .005), 0 -6px 16px -6px rgba(0, 0, 0, .005);
+  position: relative; 
+  z-index: 20;
 }
 
 #contactPage::before {

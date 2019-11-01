@@ -20,6 +20,7 @@ import ButtonContact from '../contact/ButtonContact';
 import HeroMeni from '../meni/HeroMeni';
 import FaqPage from '../faqpage/FaqPage';
 import ContactPage from '../contactpage/ContactPage';
+import Blog from '../blog/PostList';
 import logo from '../../assets/images/logo-main.png';
 
 
@@ -32,6 +33,9 @@ function App() {
         <ul class="main-menu">
           <li>
             <Link to="/">ДОМА</Link>
+          </li>
+          <li>
+            <Link to="/blog">ВЕСТИ</Link>
           </li>
           <li>
             <Link to="/faq">ЧПП</Link>
@@ -50,6 +54,9 @@ function App() {
         </Route>
         <Route path="/contactnav">
           <ContactNav />
+        </Route>
+        <Route path="/blog">
+          <BlogPage />
         </Route>
         <Route path="/">
           <Home />
@@ -134,6 +141,14 @@ function ContactNav() {
       <ContactPage/>
     </div>
   );
+}
+
+function BlogPage() {
+  return(
+    <div className="container" id="blog">
+      <Blog/>
+    </div>
+  )
 }
 
 export default App;
