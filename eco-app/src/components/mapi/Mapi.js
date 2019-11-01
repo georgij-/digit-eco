@@ -10,7 +10,7 @@ import hartija from '../../assets/images/hartija-icon.png';
 function Mapi() {
     return(
         <div className='mapi'>
-            <Map center={[41.9830, 21.4409]} zoom={13} metaWheelZoom={true} mouseEvents={false}>
+            <Map center={[41.9830, 21.4409]} zoom={13}>
               <Overlay anchor={[41.98854, 21.44999]} offset={[25, 50]}>
                   <img src={metal} width={50} height={50} alt='' />  
               </Overlay>
