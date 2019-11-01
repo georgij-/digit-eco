@@ -17,7 +17,7 @@ class HeroCalculator extends React.Component{
         var naslov = " ";
         if(this.state.currentFactor != -1 && !isNaN(this.state.inputValue)){
                     value = this.state.currentFactor * this.state.inputValue;
-                    value = parseFloat(value).toFixed(5);
+                    value = parseFloat(value).toFixed(3);
                     if(this.state.currentFactor == "0.2" ) {
                         string += " маици";
                         naslov = "Ќе добиете";
