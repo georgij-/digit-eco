@@ -7,7 +7,7 @@ class HeroCalculator extends React.Component{
     
     constructor(props){
         super(props);
-        this.state = {plasticFactor : 0.2, paperFactor: 0.3, glassFactor: 0.8, currentFactor: -1, inputValue: NaN};
+        this.state = {plasticFactor : 0.2, paperFactor: 0.000017, glassFactor: 25, currentFactor: -1, inputValue: NaN};
     }
     
     render(){
@@ -24,9 +24,9 @@ class HeroCalculator extends React.Component{
                      this.setState({inputValue: parseInt(evt.target.value)}); 
             }} />
 
-            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.plasticFactor})}} />Пластика</span>
-            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.paperFactor})}} />Хартија</span>
-            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.glassFactor})}} />Стакло</span>
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.plasticFactor})}} />Пластика (број на шишиња)</span>
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.paperFactor})}} />Хартија (килограми)</span>
+            <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.glassFactor})}} />Стакло (број на шишиња)</span>
             
             <h1>Ќе добиете</h1>
                 <span className="calculatorResult">{value}</span>
