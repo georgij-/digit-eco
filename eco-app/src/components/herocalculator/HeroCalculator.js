@@ -7,7 +7,7 @@ class HeroCalculator extends React.Component{
     
     constructor(props){
         super(props);
-        this.state = {plasticFactor : 0.5, paperFactor: 0.3, glassFactor: 0.8, currentFactor: -1, inputValue: NaN};
+        this.state = {plasticFactor : 0.2, paperFactor: 0.3, glassFactor: 0.8, currentFactor: -1, inputValue: NaN};
     }
     
     render(){
