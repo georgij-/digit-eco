@@ -12,30 +12,34 @@ class HeroCalculator extends React.Component{
     
     render(){
         var value = "";
+        var string = "";
         var naslov = " ";
         if(this.state.currentFactor != -1 && !isNaN(this.state.inputValue)){
                     value = this.state.currentFactor * this.state.inputValue;
-                    value.toFixed(2);
+                    value = parseFloat(value).toFixed(5);
                     if(this.state.currentFactor == "0.2" ) {
-                        value += " маици";
+                        string += " маици";
                         naslov = "Ќе добиете";
                     }
                     if(this.state.currentFactor == "0.000017") {
-                        value += " дрва";
+                        string += " дрва";
                         naslov = "Ќе спасите";
                     }
                     if(this.state.currentFactor == "25") {
-                        value += " минути.";
+                        string += " минути.";
                         naslov = "Ќе напојувате ";
                         naslov += "еден компјутер за: "
                     }
         }
 
-        return (<div className="calculator">
+        return (
+        <div className="calculator">
             <h1>Информативна пресметка</h1>
-            <p>Пресметајте колку суров материјал за рециклирање е потребен за да се добие еден од следниве прозиводи:</p>
+            <p>
+                Пресметајте колку и кои прозиводи ќе ги добиете со рециклирање на некој од следниве материјали:
+            </p>
             <input type="text" onChange={(evt) => {
-                     this.setState({inputValue: parseInt(evt.target.value)}); 
+                     this.setState({inputValue: parseFloat(evt.target.value)}); 
             }} />
 
             <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.plasticFactor})}} />Пластика (број на шишиња)</span>
@@ -43,8 +47,8 @@ class HeroCalculator extends React.Component{
             <span class="radio-btn"><input type="radio" name="factor" onChange = {(args)=>{this.setState({currentFactor: this.state.glassFactor})}} />Стакло (број на шишиња)</span>
             
             <h1>{naslov}</h1>
-                <span className="calculatorResult">{value}</span>
-      </div>)
+                <span className="calculatorResult">{value}{string}</span>
+        </div>)
     }
 
 }
