@@ -1,6 +1,7 @@
 import React from 'react';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '@material-ui/core/TextField';
+import '../herocalculator/HeroCalculator.css';
 // import RadioButtons from './RadioButtons';
 
 class HeroCalculator extends React.Component{
@@ -38,7 +39,7 @@ class HeroCalculator extends React.Component{
             <p>
                 Пресметајте колку и кои прозиводи ќе ги добиете со рециклирање на некој од следниве материјали:
             </p>
-            <input type="text" onChange={(evt) => {
+            <input className="vrednost-calc" type="text" onChange={(evt) => {
                      this.setState({inputValue: parseFloat(evt.target.value)}); 
             }} />
 
